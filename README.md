@@ -7,6 +7,85 @@ NIM: 2409116057
 Program ini dibuat dengan Java untuk mengatur daftar outfit harian. Program ini punya fitur sederhana: bisa nambah, lihat, ubah, dan hapus data outfit. Data outfit disimpan di dalam ArrayList dan semua program dijalankan di dalam method main.
 
 ## Alur Program
+
+1. Persiapan
+   
+<img width="522" height="186" alt="image" src="https://github.com/user-attachments/assets/4c60d900-48de-4aea-a9b3-8d2989ec9bf9" />
+
+
+- ArrayList ini buat nyimpen daftar outfit.
+- Bisa nambah, hapus, atau ubah data dengan gampang.
+- Scanner ini buat membaca input dari keyboard. Misal, user ketik nama outfit, pilih menu, dll.
+
+2. Menu Utama (do-while)
+   
+<img width="497" height="192" alt="image" src="https://github.com/user-attachments/assets/f641560e-0a6d-46bc-9cf4-bf512ec70305" />
+
+
+- Menampilkan menu pilihan ke user.
+- nextInt() baca angka yang dipilih, nextLine() dipakai buat "mengosongkan" buffer supaya input berikutnya bisa dibaca dengan nextLine().
+
+3. Tambah Outfit (case 1)
+   
+<img width="685" height="410" alt="image" src="https://github.com/user-attachments/assets/700869e2-703a-44a7-9c63-bba5e8889b43" />
+
+
+- Cek dulu apakah outfit sudah ada.
+- Kalau belum, minta konfirmasi user, baru ditambah ke daftar.
+
+4️. Lihat Outfit (case 2)
+
+<img width="536" height="187" alt="image" src="https://github.com/user-attachments/assets/f8f3fc14-1b86-49a4-9cb4-29f77b8a7a7c" />
+
+
+- Menampilkan semua outfit dengan nomor urut.
+- Kalau outfits kosong, muncul pesan (Belum ada outfit).
+
+5️. Ubah Outfit (case 3)
+
+<img width="573" height="315" alt="image" src="https://github.com/user-attachments/assets/53862e5e-2af5-4961-86ec-8283186c46a0" />
+
+<img width="612" height="279" alt="image" src="https://github.com/user-attachments/assets/ec5b4ce8-6d05-44ca-b790-9bacdc881e04" />
+
+- Tampilkan daftar outfit dulu.
+-  if (Yakin.equals("ya")): ini untuk mengecek apakah user mengetik “ya” sebelum menambahkan, mengubah, atau menghapus outfit.
+- User pilih nomor outfit yang mau diubah.
+- Minta konfirmasi “ya/tidak”.
+- Kalau “ya”, ganti dengan input baru menggunakan:
+
+<img width="273" height="16" alt="image" src="https://github.com/user-attachments/assets/951e3cff-5b3a-4114-afa9-af0adf882da4" />
+
+
+6️. Hapus Outfit (case 4)
+
+<img width="646" height="555" alt="image" src="https://github.com/user-attachments/assets/ba53f430-8d3d-4639-9558-f92d2689e87b" />
+
+- Mirip case 3, tapi pakai:
+
+<img width="214" height="14" alt="image" src="https://github.com/user-attachments/assets/5ab50545-2fc9-4e31-8a3b-63e8877275a8" />
+
+- Dulu minta konfirmasi sebelum dihapus.
+
+7️. Keluar (case 5)
+
+<img width="614" height="262" alt="image" src="https://github.com/user-attachments/assets/9befb842-4766-4b2b-ba02-b401b3f0e235" />
+
+- User konfirmasi dulu. Kalau “tidak” atau input salah, balik ke menu.
+
+8️. Default
+
+<img width="465" height="62" alt="image" src="https://github.com/user-attachments/assets/9e3d2b4c-3380-451e-9ef3-d8dccda059e2" />
+
+
+- Kalau user input angka yang nggak ada di menu.
+
+9️. Looping
+<img width="291" height="108" alt="image" src="https://github.com/user-attachments/assets/568d14ee-8cc5-42fa-ab03-15a3b67462ce" />
+
+- Menu bakal terus muncul sampai user pilih keluar (5).
+- Scanner ditutup, program selesai.
+
+## Output
 1. Inisialisasi Data
    - Program membuat ArrayList<String> outfits untuk menyimpan daftar outfit.
    - Tiga outfit default langsung ditambahkan ke dalam list.
